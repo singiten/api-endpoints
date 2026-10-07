@@ -33,8 +33,8 @@ app.get('/health', (req, res) => {
 // app.use('/api/v1/auth', authRoutes);
 // const orgRoutes = require('./modules/organizations/organizations.routes');
 // app.use('/api/v1/organizations', orgRoutes);
-// const productRoutes = require('./modules/products/products.routes');
-// app.use('/api/v1/products', productRoutes);
+ const productRoutes = require('./modules/products/products.routes');
+ app.use('/api/v1/products', productRoutes);
 // const warehouseRoutes = require('./modules/warehouses/warehouses.routes');
 // app.use('/api/v1/warehouses', warehouseRoutes);
 // const inventoryRoutes = require('./modules/inventory/inventory.routes');
